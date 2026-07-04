@@ -20,12 +20,12 @@
     <string name="config_add_new_package">Добавить новый пакет</string>
     <string name="config_add_one_to_get_started">Нажмите, чтобы добавить приложения в список</string>
     <string name="config_all_users">Для всех пользователей</string>
-    <string name="config_all_users_desc">Устанавливать пакеты для всех пользователей системы, а не только назначенных или основного</string>
+    <string name="config_all_users_desc">Установить пакет для всех пользователей в системе, а не только для указанного или пользователя по умолчанию</string>
     <string name="config_all_whitelist_restricted_permissions">Разрешить ограниченные права доступа</string>
     <string name="config_all_whitelist_restricted_permissions_desc">Предоставлять устанавливаемому пакету ограниченные права доступа</string>
-    <string name="config_allow_downgrade">Разрешить понижение версии</string>
-    <string name="config_allow_downgrade_desc">Разрешить установку более ранних версий пакетов (для Android 15+ нужны права Root)</string>
-    <string name="config_allow_test">Разрешить тестирование</string>
+    <string name="config_allow_downgrade">Разрешить понижение</string>
+    <string name="config_allow_downgrade_desc">Попытки снизить версию текущей установленной версии пакета (Android 15+ требуется ROOT)</string>
+    <string name="config_allow_test">Разрешить тест</string>
     <string name="config_allow_test_desc">Разрешить установку пакетов, предназначенных только для тестирования</string>
     <string name="config_authorizer">Авторизатор</string>
     <string name="config_authorizer_customize">Пользовательский</string>
@@ -52,7 +52,7 @@
     <string name="config_error_installer">Исходный код установщика не может быть пустым</string>
     <string name="config_error_name">Имя не может быть пустым</string>
     <string name="config_follow_settings">Согласно настройкам</string>
-    <string name="config_grant_all_permissions">Предоставлять все разрешения</string>
+    <string name="config_grant_all_permissions">Предоставить все разрешения</string>
     <string name="config_grant_all_permissions_desc">Автоматически предоставлять все запрашиваемые разрешения пакетом. Это относится только к разрешениям на время установки. Специальные разрешения, такие как доступ к файлам или специальные возможности, не будут предоставлены</string>
     <string name="config_info">Информация</string>
     <string name="config_install_mode">Режим установки</string>
@@ -211,7 +211,7 @@
     <string name="installing_progress_text">Установка %1$s (%2$d/%3$d)</string>
     <string name="instant_app">Мгновенное приложение</string>
     <string name="instant_app_desc">Установить пакет как приложение с мгновенным запуском</string>
-    <string name="internal">Внутренняя память</string>
+    <string name="internal">Внутреннее хранилище</string>
     <string name="internal_desc">Принудительно установить пакет во внутреннее хранилище</string>
     <string name="loading">Загрузка…</string>
     <string name="lock_default_installer">Назначить установщиком по умолчанию</string>
@@ -295,8 +295,8 @@
     <string name="show_dialog_install_extended_menu">Расширенное меню</string>
     <string name="show_dialog_install_extended_menu_desc">Дополнительное меню с параметрами в диалоговом окне установки</string>
     <string name="show_dialog_when_pressing_notification">Показать диалоговое окно при нажатии на уведомление</string>
-    <string name="show_intelligent_suggestion">Показывать подсказки</string>
-    <string name="show_intelligent_suggestion_desc">При сбоях установки отображать полезные советы</string>
+    <string name="show_intelligent_suggestion">Показывать умные предложения</string>
+    <string name="show_intelligent_suggestion_desc">Показывать умные предложения при неудачной установке</string>
     <string name="sort">Сортировать</string>
     <string name="sort_by_install_time">Дата</string>
     <string name="sort_by_label">Название</string>
@@ -321,8 +321,8 @@
     <string name="staged">Поэтапный</string>
     <string name="staged_desc">Указывает, что этот пакет устанавливается в рамках поэтапной установки</string>
     <string name="success">Успешно</string>
-    <string name="suggestion_allow_downgrade">Разрешить однократное понижение версии</string>
-    <string name="suggestion_allow_test_app">Разрешить тестирование</string>
+    <string name="suggestion_allow_downgrade">Разрешить понижение один раз</string>
+    <string name="suggestion_allow_test_app">Разрешить тест</string>
     <string name="suggestion_bypass_low_target_sdk">Обход ограничений</string>
     <string name="suggestion_mi_isolation">Воспользуйтесь рабочим установщиком</string>
     <string name="suggestion_uninstall_alert_dialog_confirm_action">Подтвердите действие</string>
@@ -497,7 +497,7 @@
     <string name="installer_uninstalling">Удаляем</string>
     <string name="uninstall_keep_data">Сохранять данные</string>
     <string name="uninstall_keep_data_desc">Данные и кэш будут сохранены при удалении приложений</string>
-    <string name="uninstall_all_users">Для всех пользователей</string>
+    <string name="uninstall_all_users">Установить для всех пользователей</string>
     <string name="uninstall_all_users_desc">Удалите это приложение для всех пользователей на этом устройстве</string>
     <string name="uninstall_delete_system_app">Удалять системные приложения</string>
     <string name="uninstall_delete_system_app_desc">Разрешить удаление системных приложений для текущего пользователя</string>
@@ -527,7 +527,7 @@
     <string name="sdk_compare_in_multi_line_desc">Отображать требуемые версии SDK в две строки при установке</string>
     <string name="auto_background_install">Установка в фоне</string>
     <string name="auto_background_install_desc">Автоматическая установка в фоне при нажатии кнопки \'Установить\'</string>
-    <string name="installer_oppo_related">Относится к OPPO</string>
+    <string name="installer_oppo_related">Связанные с OPPO</string>
     <string name="installer_show_oem_special">Показывать дополнительную информацию OEM</string>
     <string name="installer_show_oem_special_desc">Проанализируйте и укажите определенное значение для oem apk(s) в диалоговом окне установки</string>
     <string name="config_request_update_ownership">Запрос прав на обновление</string>
@@ -546,7 +546,7 @@
     <string name="suggestion_uninstall_and_retry_desc">Это удалит текущую версию без сохранения данных и установит новую</string>
     <string name="suggestion_uninstall_and_retry_keep_data_desc">Это удалит текущую версию с сохранением данных и установит новую</string>
     <string name="suggestion_allow_downgrade_desc">Временно разрешить понижение версии и повторить</string>
-    <string name="suggestion_allow_test_app_desc">Временно разрешить тестирование и повторить</string>
+    <string name="suggestion_allow_test_app_desc">Временно разрешить тестирование и повторную попытку</string>
     <string name="suggestion_mi_isolation_desc">Временно используйте действующий установщик и повторите</string>
     <string name="suggestion_shizuku_isolation">Попробуйте использовать Shizuku</string>
     <string name="suggestion_shizuku_isolation_desc">Попробуйте с Shizuku и верным установщиком</string>
@@ -575,7 +575,7 @@
     <string name="installer_settings_auto_clear_time_never_desc">Всегда отображать уведомление об успешной установке</string>
     <string name="installer_settings_auto_clear_time_seconds_format_desc">Скрывать уведомления об успешной установке через %d сек.</string>
     <string name="config_customize_install_reason">Причина установки</string>
-    <string name="config_customize_install_reason_desc">Укажите причину установки. Если выбрать пункт Пользователь, это позволит создать иконку пакета на рабочем столе</string>
+    <string name="config_customize_install_reason_desc">Укажите причину установки для новых приложений. Выбор варианта \"Пользователь\" обычно позволяет программе запуска создать иконку на рабочем столе.</string>
     <string name="config_install_reason">Выбрать причину установки</string>
     <string name="config_install_reason_unknown">Причина неизвестна</string>
     <string name="config_install_reason_policy">Политика устройства</string>
@@ -620,7 +620,7 @@
     <string name="exception_http_restricted_for_localhost">HTTP с открытым текстом разрешён только для локального хоста</string>
     <string name="old_version_uninstalled">Удалено</string>
     <string name="reboot">Перезагрузка</string>
-    <string name="reboot_userspace">Перезапуск системного интерфейса</string>
+    <string name="reboot_userspace">Перезагрузка пользовательского пространства</string>
     <string name="reboot_recovery">Перезагрузка в Recovery</string>
     <string name="reboot_bootloader">Перезагрузка в Bootloader</string>
     <string name="reboot_edl">Перезагрузка в EDL</string>
@@ -984,4 +984,6 @@
     <string name="config_declare_installer_system_default_desc">По умолчанию используется инициатор установки</string>
     <string name="config_customize_install_reason_disabled_desc">Если включено соблюдение политики платформы, по умолчанию используется режим Пользователь</string>
     <string name="config_customize_package_source_disabled_desc">При включении политики платформы заполняется автоматически из источника</string>
+    <string name="config_authorizer_command_desc">Команда: %1$s</string>
+    <string name="dhizuku_unsupported_desc">Dhizuku не поддерживается</string>
 </resources>
