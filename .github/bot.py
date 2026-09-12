@@ -7,8 +7,15 @@ import sys
 API_ID = os.environ.get("API_ID")
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-CHAT_ID = int(os.environ.get("CHAT_ID"))
+CHAT_ID_RAW = os.environ.get("CHAT_ID")
 BOT_CI_SESSION = os.environ.get("BOT_CI_SESSION")
+
+# Forks without Telegram secrets configured: skip the notification gracefully
+# (the GitHub Release step is unaffected) instead of failing the whole workflow.
+if not all([API_ID, API_HASH, BOT_TOKEN, CHAT_ID_RAW]):
+    print("[-] Telegram secrets not configured; skipping TG notification.")
+    sys.exit(0)
+CHAT_ID = int(CHAT_ID_RAW)
 
 async def send_telegram_files(files):
     """
